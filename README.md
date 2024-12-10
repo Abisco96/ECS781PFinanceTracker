@@ -3,7 +3,9 @@ CLOUD COMPUTING Personal Finance Tracker
 
 ## About
 In today's digital age, where financial data is scattered across multiple platforms, managing and analyzing personal finances can be overwhelming. The use of the Plaid API is instrumental in simplifying this process, offering seamless access to aggregated financial data from diverse institutions. It provides not only detailed insights into transactions and balances but also contextual information to empower better financial decision-making.
+
 This project, the Personal Finance Tracker, is a financial application that enables secure user interactions with financial data by integrating a front-end, a back-end application server hosted on Google Cloud, a lightweight SQLite database, and the Plaid API. The front-end acts as the user interface, allowing users to input data, make requests, and view results. It communicates with the back-end using secure HTTPS protocols and standard HTTP methods such as GET, POST, PUT, and DELETE. The back-end application server, built with Node.js and Express.js, serves as the processing core of the application. It manages the business logic, processes incoming requests, and routes them to the appropriate services. The back-end also uses tools like Ngrok during development to expose local servers to the internet to create a secure tunnel.
+
 A key feature of the project is its integration with the Plaid API, a financial data aggregation service. Using tokens such as PUBLIC_TOKEN for authorization and ACCESS_TOKEN for secure data access, the application retrieves financial data like bank account information, transactions, and balances. The Plaid API integration ensures that sensitive user data is securely accessed and processed. The application server also interacts with a SQLite database hosted on Google Cloud, which serves as a lightweight, serverless solution for storing persistent data, such as user credentials, financial records, and transaction details.
 
 ### Pre-requisites:
@@ -16,6 +18,7 @@ A key feature of the project is its integration with the Plaid API, a financial 
 
 ## Node.js & Express.js Structure
 ``` JavaScript
+.
 |──────Personal_Finance_Tracker/ 
 | |────public/
 | | |────js/
@@ -41,6 +44,7 @@ The entire workflow begins with the front-end sending requests (e.g., fetching u
 
 ### Cloud account
 A Google Cloud account provides access to Google Cloud Platform (GCP) services for building and managing applications and infrastructure. Upon creating an account, it is possible to organize resources into projects, which act as containers for billing, APIs, and resource management.
+
 Each project is linked to a billing account, ensuring costs are tracked and invoiced. Users can manage access through roles and permissions using Identity and Access Management (IAM). GCP services are accessed via the console, APIs, or SDKs, and resources are billed based on usage, offering scalability and flexibility.
 
 ### Terms used for Personal Finance Tracker
